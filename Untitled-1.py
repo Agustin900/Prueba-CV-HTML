@@ -17,7 +17,7 @@ def pasos_acercandose(mcr):
 
 # Función: simula bloques rompiéndose acercándose
 def bloques_rompiendose_acercandose(mcr):
-    offsets = [2, 1, 0]
+    offsets = [4, 3, 2, 1, 0]
     for x in offsets:
         cmd = f'/execute as @r at @s run playsound minecraft:block.stone.break master @s ~{x} ~ ~ 10 1'
         mcr.command(cmd)
@@ -47,8 +47,9 @@ comandos_troll = [
     '/execute as @r at @s run playsound minecraft:entity.warden.listening master @s ~ ~ ~ 10 1',
     '/execute as @r at @s run playsound minecraft:entity.warden.step master @s ~ ~ ~ 10 1',
     '/execute as @r at @s run summon minecraft:lightning_bolt',
-    '/execute as @r at @s run summon minecraft:bee ~ ~ ~ {NoAI:1b}',
-    '/execute as @r at @s run playsound minecraft:entity.enderman.scream master @s ~ ~ ~ 10 0'
+    '/execute as @r at @s run summon minecraft:zombie ~ ~ ~',
+    '/execute as @r at @s run playsound minecraft:entity.enderman.death master @s ~ ~ ~ 10 0',
+    '/execute as @r at @s run playsound minecraft:entity.warden.emerge master @a ~ ~ ~ 10 0'
 ]
 
 # Categorías de efectos
