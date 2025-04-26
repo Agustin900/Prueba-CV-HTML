@@ -127,7 +127,7 @@ try:
                 efectos_terror_psicologico(mcr)
 
             # Espera aleatoria entre efectos
-            time.sleep(random.randint(30, 60))
+            time.sleep(random.randint(30, 180))
 
 except Exception as e:
     print(f"[ERROR] No se pudo conectar o ejecutar el comando: {e}")
